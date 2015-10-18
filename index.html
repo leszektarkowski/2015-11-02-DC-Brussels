@@ -1,38 +1,22 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "BELSPO"      # brief name of host site without address (e.g., "Euphoric State University")
+address: "Avenue Louise/Louizalaan 231, 1050 Brussels"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "be"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "50.825349, 4.365441"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Nov 2-3, 2015"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 - 17:00"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2015-11-02"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2015-11-02"    # use YYYY-MM-DD format like" 2015-01-02"
+instructor: ["Leszek Tarkowski", "Frederik Coppens"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Dima Fishman", "Christof De Bo"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: leszek.tarkowski@gmail.com    # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+eventbrite: "18312852234"      # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
-<!--
-  HEADER
 
-  Edit the values in the block above to be appropriate for your workshop.
-  If the value is not 'true', 'false', 'null', or a number, please use
-  double quotation marks around the value, unless specified otherwise.
-  And run 'tools/check' *before* committing to make sure that changes are good.
--->
-
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -45,41 +29,26 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <h2>General Information</h2>
 
-<!--
-  INTRODUCTION
-
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
--->
+<h2>Workshop Information</h2>
+<h3>Data Carpentry</h3>
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
-</p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
+In many domains of research the rapid generation of large amounts of data is fundamentally changing how research is done. The deluge of data presents great opportunities, but also many challenges in managing, analyzing and sharing data. Data Carpentry is designed to teach basic concepts, skills and tools for working more effectively with data.  The workshop is aimed at researchers in the life sciences at all career stages and is designed for learners with little to no prior knowledge of programming, shell scripting, or command line tools.
 </p>
 
 <!--
-  AUDIENCE
-
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
+<h3>Etherpad</h3>
+<p>For communication we will be using <a href="https://datacarpentry.etherpad.mozilla.org/68">this Etherpad </a></p>
 -->
-<p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+
+<h3>Workshop learning objectives  & programme</h3>
+<p>Workshop Learning objectives  & programme
+
+<ul>
+<li>How to use spreadsheet programs (such as Excel) more effectively, and the limitations of such programs.</li>
+<li>Getting data out of spreadsheets and into more powerful tools (R).</li>
+<li>Using databases, including managing and querying data in SQL.</li>
+<li>Workflows and automating repetitive tasks, in particular using the command line shell.</li>
+</ul>
 </p>
 
 <!--
@@ -467,7 +436,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <h4 id="editor-windows">Windows</h4>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it, 
+        To install it,
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
